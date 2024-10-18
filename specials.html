@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - Kebab on Wheel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffcc00; /* Yellow for header */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 80px; /* Height for logo */
+            margin-left: 20px; /* Left margin */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px; /* Space between nav items */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 10px 20px; /* Padding for uniformity */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6600; /* Change color on hover */
+            color: white;
+            border-radius: 4px; /* Rounded corners on hover */
+        }
+
+        /* Specials section styling */
+        .specials {
+            padding: 40px 20px;
+            text-align: center; /* Center text for the title */
+        }
+
+        .specials h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ff6600; /* Matching heading color */
+        }
+
+        .specials-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center items */
+        }
+
+        .special-item {
+            background-color: #f8f9fa; /* Light item background */
+            border: 1px solid #dee2e6; /* Light border */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 250px; /* Fixed width */
+            transition: transform 0.3s; /* Transition for scaling effect */
+        }
+
+        .special-item img {
+            width: 100%; /* Full width images */
+            border-radius: 5px 5px 0 0; /* Rounded corners for images */
+        }
+
+        .special-item h3 {
+            color: #d9534f; /* Accent color for item titles */
+            margin: 15px 0 10px;
+        }
+
+        .special-item p {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #28a745; /* Green color for price */
+        }
+
+        /* Scale effect on hover */
+        .special-item:hover {
+            transform: scale(1.05); /* Scaling effect */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333; /* Dark footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="armando.png" alt="Kebab on Wheel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="specials.html">Special Offers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="specials">
+        <h2>Special Food Offers</h2>
+        <div class="specials-container">
+            <div class="special-item">
+                <img src="special1.png" alt="Kebab Deluxe">
+                <h3>Kebab Deluxe</h3>
+                <p>Succulent kebabs served with fresh veggies and special sauce.</p>
+                <span class="price">$12.99</span>
+            </div>
+            <div class="special-item">
+                <img src="special2.png" alt="Pizza Extravaganza">
+                <h3>Pizza Extravaganza</h3>
+                <p>Delicious pizza loaded with toppings and cheese.</p>
+                <span class="price">$14.99</span>
+            </div>
+            <div class="special-item">
+                <img src="special3.png" alt="Chips Supreme">
+                <h3>Chips Supreme</h3>
+                <p>Crispy chips served with a side of zesty dip.</p>
+                <span class="price">$5.99</span>
+            </div>
+            <div class="special-item">
+                <img src="special4.png" alt="Burger Blast">
+                <h3>Burger Blast</h3>
+                <p>Juicy burger with all the fixings for a satisfying meal.</p>
+                <span class="price">$11.49</span>
+            </div>
+            <div class="special-item">
+                <img src="special5.png" alt="Taco Fiesta">
+                <h3>Taco Fiesta</h3>
+                <p>Spicy tacos served with fresh salsa and guacamole.</p>
+                <span class="price">$9.99</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kebab on Wheel | All Rights Reserved</p>
+        <p>Trading Hours: 9 AM - 11 PM mon-sun | Contact: 123-456-7890</p>
+    </footer>
+</body>
+</html>

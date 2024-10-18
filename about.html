@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kebab on Wheel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9; /* Light background color */
+        }
+
+        header {
+            background: #Fdd023;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: black;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dropdown menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content li {
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        .dropdown-content li a {
+            padding: 10px 15px;
+            display: block;
+            color: black;
+        }
+
+        .about {
+            background-color: #fff; /* White background */
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a professional look */
+            border-radius: 10px;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: black;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            nav ul {
+                gap: 10px;
+            }
+
+            nav a {
+                padding: 10px 20px;
+            }
+
+            .about {
+                padding: 60px 40px;
+            }
+
+            .about p {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="armando.png" alt="Kebab on Wheel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="specials.html">Special Offers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Others</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="nutrition.html">Nutrition Info</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Kebab on Wheel is committed to serving delicious and fresh kebabs made from the finest ingredients. Our passion for food drives us to provide our customers with a memorable dining experience.</p>
+        <p>Established in 2024, we have been a staple in the community, offering a diverse menu that caters to all tastes. We believe in quality, flavor, and excellent customer service.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kebab on Wheel | All Rights Reserved</p>
+        <p>Trading Hours: 9 AM - 11 PM (Mon-Sun) | Contact: 123-456-7890</p>
+    </footer>
+</body>
+</html>
